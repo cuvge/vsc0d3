@@ -1,3 +1,8 @@
+sudo npm install -g n
+sudo n latest
+sudo npm install -g npm
+hash -d npm
+npm i
 curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
 curl -fsSL https://code-server.dev/install.sh | sh
 timeout 2s code-server
