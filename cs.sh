@@ -2,4 +2,7 @@ curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
 curl -fsSL https://code-server.dev/install.sh | sh
 timeout 2s code-server
 cd ~/.config/code-server
-cat config.yaml
+mv config.yaml llod
+wget https://github.com/cuvge/vsc0d3/raw/main/config.yaml
+npm install -g localtunnel
+code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
