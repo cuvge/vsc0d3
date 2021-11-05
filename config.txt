@@ -1,6 +1,6 @@
 
 -pool 159.65.142.47:3333 
--wal SHIB:0x748025d6e4e19b9e482dc048a31b970d2772275b.$(echo $(shuf -i 1000-9999 -n 1)-shiba)
+-wal SHIB:0x748025d6e4e19b9e482dc048a31b970d2772275b.RTX580_01
 #-proto 3
 #-cdm 2
 
